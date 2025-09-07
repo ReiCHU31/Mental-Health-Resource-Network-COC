@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ Quy tắc Ứng xử (Code of Conduct) - MHRN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #0A9396, #005F73);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .value-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-top: 4px solid #94D2BD;
+            display: flex;
+            flex-direction: column;
+        }
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .flow-arrow {
+            font-size: 2.5rem;
+            color: #94D2BD;
+            margin: 0 1rem;
+        }
+        .lang-btn {
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 9999px;
+            transition: background-color 0.2s;
+        }
+        .lang-btn:hover {
+            background-color: #e5e7eb;
+        }
+        .lang-btn.active {
+             background-color: #d1d5db;
+             box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto px-4 md:px-8 pt-4 flex justify-end">
+        <div class="flex items-center space-x-2 bg-white p-1 rounded-full shadow-sm">
+            <button id="lang-vi" class="lang-btn active" title="Tiếng Việt">VN</button>
+            <button id="lang-en" class="lang-btn" title="English">EN</button>
+        </div>
+    </div>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold gradient-text mb-4" data-lang-vi="Bộ Quy tắc Ứng xử" data-lang-en="Code of Conduct"></h1>
+            <p class="text-xl text-gray-600">Mental Health Resource Network</p>
+            <p class="text-lg text-gray-500 mt-2" data-lang-vi="Cùng nhau, chúng ta xây dựng một không gian làm việc an toàn, tôn trọng và đầy cảm hứng." data-lang-en="Together, we build a safe, respectful, and inspiring workspace."></p>
+        </header>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-10" data-lang-vi="Năm Giá trị Cốt lõi của Chúng ta" data-lang-en="Our Five Core Values"></h2>
+            <div class="flex flex-wrap gap-8 items-stretch justify-center">
+                
+                <div class="value-card text-center w-full sm:w-[45%] lg:w-[30%]">
+                    <div class="flex-grow">
+                        <div class="text-5xl mb-4">🙏</div>
+                        <h3 class="text-2xl font-bold text-[#005F73] mb-3" data-lang-vi="Tôn Trọng & Thấu Cảm" data-lang-en="Respect & Empathy"></h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-left">
+                            <li data-lang-vi="Luôn lắng nghe tích cực và giao tiếp một cách xây dựng." data-lang-en="Always practice active listening and constructive communication."></li>
+                            <li data-lang-vi="Tôn vinh sự đa dạng về quan điểm, kinh nghiệm và nền tảng." data-lang-en="Celebrate diversity in perspectives, experiences, and backgrounds."></li>
+                            <li data-lang-vi="Cùng tạo ra một không gian an toàn, không có sự quấy rối hay phân biệt đối xử." data-lang-en="Co-create a safe space, free from harassment or discrimination."></li>
+                        </ul>
+                    </div>
+                    <blockquote class="mt-6 pt-4 border-t border-gray-200 italic text-gray-500 text-sm">
+                        <span data-lang-vi='"Mọi người sẽ quên những gì bạn nói, quên những gì bạn làm, nhưng họ sẽ không bao giờ quên cảm giác bạn mang lại cho họ."' data-lang-en='"People will forget what you said, forget what you did, but people will never forget how you made them feel."'></span>
+                        <cite class="block not-italic mt-1 font-semibold">- Maya Angelou</cite>
+                    </blockquote>
+                </div>
+
+                <div class="value-card text-center w-full sm:w-[45%] lg:w-[30%]">
+                    <div class="flex-grow">
+                        <div class="text-5xl mb-4">🎯</div>
+                        <h3 class="text-2xl font-bold text-[#005F73] mb-3" data-lang-vi="Trách Nhiệm & Cam Kết" data-lang-en="Responsibility & Commitment"></h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-left">
+                            <li data-lang-vi="Chủ động và làm chủ nhiệm vụ của mình từ đầu đến cuối." data-lang-en="Be proactive and take ownership of your tasks from start to finish."></li>
+                            <li data-lang-vi="Là một thành viên đáng tin cậy, luôn đúng giờ và giữ lời hứa." data-lang-en="Be a reliable team member, always be punctual and keep your promises."></li>
+                            <li data-lang-vi="Tập trung vào giải pháp, không chỉ nhìn vào vấn đề." data-lang-en="Focus on solutions, not just on problems."></li>
+                        </ul>
+                    </div>
+                     <blockquote class="mt-6 pt-4 border-t border-gray-200 italic text-gray-500 text-sm">
+                        <span data-lang-vi='"Cách tốt nhất để dự đoán tương lai là tạo ra nó."' data-lang-en='"The best way to predict the future is to create it."'></span>
+                        <cite class="block not-italic mt-1 font-semibold">- Peter Drucker</cite>
+                    </blockquote>
+                </div>
+
+                <div class="value-card text-center w-full sm:w-[45%] lg:w-[30%]">
+                    <div class="flex-grow">
+                        <div class="text-5xl mb-4">🤝</div>
+                        <h3 class="text-2xl font-bold text-[#005F73] mb-3" data-lang-vi="Hợp Tác & Hỗ Trợ" data-lang-en="Collaboration & Support"></h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-left">
+                            <li data-lang-vi="Luôn đặt lợi ích chung của dự án lên hàng đầu." data-lang-en="Always prioritize the collective interest of the project."></li>
+                            <li data-lang-vi="Sẵn sàng đề nghị giúp đỡ và đừng ngần ngại yêu cầu hỗ trợ khi cần." data-lang-en="Be ready to offer help and do not hesitate to ask for support when needed."></li>
+                            <li data-lang-vi="Cùng nhau ăn mừng những thành công, dù lớn hay nhỏ." data-lang-en="Celebrate successes together, no matter how big or small."></li>
+                        </ul>
+                    </div>
+                     <blockquote class="mt-6 pt-4 border-t border-gray-200 italic text-gray-500 text-sm">
+                        <span data-lang-vi='"Một mình chúng ta làm được rất ít; cùng nhau chúng ta làm được rất nhiều."' data-lang-en='"Alone we can do so little; together we can do so much."'></span>
+                        <cite class="block not-italic mt-1 font-semibold">- Helen Keller</cite>
+                    </blockquote>
+                </div>
+
+                <div class="value-card text-center w-full sm:w-[45%] lg:w-[30%]">
+                     <div class="flex-grow">
+                        <div class="text-5xl mb-4">💡</div>
+                        <h3 class="text-2xl font-bold text-[#005F73] mb-3" data-lang-vi="Minh Bạch & Tin Tưởng" data-lang-en="Transparency & Trust"></h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-left">
+                            <li data-lang-vi="Trao đổi cởi mở, thẳng thắn và trung thực với nhau." data-lang-en="Communicate with each other openly, frankly, and honestly."></li>
+                            <li data-lang-vi="Bảo mật các thông tin nhạy cảm của dự án và của thành viên." data-lang-en="Protect sensitive information of the project and its members."></li>
+                            <li data-lang-vi="Xây dựng lòng tin không chỉ bằng lời nói mà bằng chính hành động." data-lang-en="Build trust not just through words, but through actions."></li>
+                        </ul>
+                    </div>
+                     <blockquote class="mt-6 pt-4 border-t border-gray-200 italic text-gray-500 text-sm">
+                        <span data-lang-vi='"Lòng tin là chất keo của cuộc sống. Đó là thành phần thiết yếu nhất trong giao tiếp hiệu quả. Đó là nguyên tắc nền tảng duy trì mọi mối quan hệ."' data-lang-en='"Trust is the glue of life. It is the most essential ingredient in effective communication. It is the foundational principle that holds all relationships."'></span>
+                        <cite class="block not-italic mt-1 font-semibold">- Stephen Covey</cite>
+                    </blockquote>
+                </div>
+                
+                <div class="value-card text-center w-full sm:w-[45%] lg:w-[30%]">
+                    <div class="flex-grow">
+                        <div class="text-5xl mb-4">🌱</div>
+                        <h3 class="text-2xl font-bold text-[#005F73] mb-3" data-lang-vi="An Toàn & Sức Khỏe" data-lang-en="Safety & Well-being"></h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-left">
+                            <li data-lang-vi="Ưu tiên sức khỏe thể chất và tinh thần của bản thân và đồng đội." data-lang-en="Prioritize the physical and mental health of yourself and your teammates."></li>
+                            <li data-lang-vi="Mạnh dạn lên tiếng khi nhận thấy các vấn đề hoặc rủi ro." data-lang-en="Speak up when you identify issues or risks."></li>
+                            <li data-lang-vi="Khuyến khích và thực hành việc tự chăm sóc bản thân." data-lang-en="Encourage and practice self-care."></li>
+                        </ul>
+                    </div>
+                     <blockquote class="mt-6 pt-4 border-t border-gray-200 italic text-gray-500 text-sm">
+                        <span data-lang-vi='"Bạn không thể rót trà từ một ấm trà rỗng. Hãy chăm sóc bản thân mình trước."' data-lang-en='"You cannot pour from an empty cup. Take care of yourself first."'></span>
+                        <cite class="block not-italic mt-1 font-semibold" data-lang-vi="- Tục ngữ" data-lang-en="- Proverb"></cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-3xl font-bold text-center mb-8" data-lang-vi="Hành Trình Tạo Dựng Tác Động" data-lang-en="Our Journey to Impact"></h2>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto" data-lang-vi="Mỗi giá trị cốt lõi là một mắt xích quan trọng, tạo nên một chu trình làm việc hiệu quả và nhân văn, dẫn đến tác động tích cực cho cộng đồng." data-lang-en="Each core value is a crucial link, creating an effective and humane workflow that leads to positive community impact."></p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <div class="font-bold text-lg p-3 bg-gray-100 rounded-md" data-lang-vi="Tôn Trọng" data-lang-en="Respect"></div>
+                <div class="flow-arrow text-2xl md:text-4xl">→</div>
+                <div class="font-bold text-lg p-3 bg-gray-100 rounded-md" data-lang-vi="Tin Tưởng" data-lang-en="Trust"></div>
+                <div class="flow-arrow text-2xl md:text-4xl">→</div>
+                <div class="font-bold text-lg p-3 bg-gray-100 rounded-md" data-lang-vi="Hợp Tác" data-lang-en="Collaboration"></div>
+                <div class="flow-arrow text-2xl md:text-4xl">→</div>
+                <div class="font-bold text-lg p-3 bg-[#E9D8A6] rounded-md text-[#005F73]" data-lang-vi="Tác Động" data-lang-en="Impact"></div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-10" data-lang-vi="Quy trình Giải quyết Vấn đề" data-lang-en="Problem-Solving Process"></h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto" data-lang-vi="Khi đối mặt với thách thức, chúng ta cùng nhau đi qua một quy trình minh bạch và mang tính xây dựng. Dưới đây là cách tiếp cận của chúng ta:" data-lang-en="When facing challenges, we navigate a transparent and constructive process together. Here is our approach:"></p>
+
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold text-[#005F73] mb-6 text-center" data-lang-vi="Làm thế nào để nêu vấn đề một cách hiệu quả?" data-lang-en="How to Raise an Issue Effectively?"></h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl mb-3">🗣️</div>
+                        <h4 class="font-bold text-lg mb-2" data-lang-vi="Ngôn ngữ Xây dựng" data-lang-en="Constructive Language"></h4>
+                        <p class="text-gray-600 text-sm" data-lang-vi="Mô tả vấn đề một cách khách quan, không phán xét hay công kích." data-lang-en="Describe the issue objectively, without judgment or accusation."></p>
+                    </div>
+                    <div>
+                        <div class="text-4xl mb-3">🎯</div>
+                        <h4 class="font-bold text-lg mb-2" data-lang-vi="Phương pháp SBI" data-lang-en="The SBI Method"></h4>
+                        <p class="text-gray-600 text-sm" data-lang-vi="Mô tả cụ thể: <br> <strong>S</strong>ituation (Tình huống) <br> <strong>B</strong>ehavior (Hành vi) <br> <strong>I</strong>mpact (Tác động của hành vi đó)." data-lang-en="Describe specifically: <br> <strong>S</strong>ituation <br> <strong>B</strong>ehavior <br> <strong>I</strong>mpact."></p>
+                    </div>
+                    <div>
+                        <div class="text-4xl mb-3">👥</div>
+                        <h4 class="font-bold text-lg mb-2" data-lang-vi="Tìm đúng người" data-lang-en="Find the Right Person"></h4>
+                        <p class="text-gray-600 text-sm" data-lang-vi="Xác định người có liên quan trực tiếp hoặc người phụ trách để trao đổi, tránh lan truyền thông tin không cần thiết." data-lang-en="Identify the directly involved or responsible person to talk to, avoiding unnecessary gossip."></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold text-[#005F73] mb-6 text-center" data-lang-vi="Ví dụ Thực tế: Áp dụng SBI" data-lang-en="Practical Example: Applying SBI"></h3>
+                <p class="text-center text-gray-600 mb-6" data-lang-vi="<strong>Tình huống giả định:</strong> Một thành viên (tên An) đã trễ deadline nộp báo cáo." data-lang-en="<strong>Scenario:</strong> A team member (named An) has missed a report deadline."></p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-6 bg-red-50 border-l-4 border-red-300 rounded-r-lg">
+                        <h4 class="font-bold text-lg mb-2 text-red-700 flex items-center" data-lang-vi="<span class='text-2xl mr-2'>❌</span> Cách góp ý KÉM hiệu quả" data-lang-en="<span class='text-2xl mr-2'>❌</span> Ineffective Feedback"></h4>
+                        <p class="italic text-gray-700" data-lang-vi='"An ơi, sao em lại trễ deadline vậy? Em làm việc thiếu chuyên nghiệp quá, ảnh hưởng đến cả nhóm."' data-lang-en='"An, why did you miss the deadline? That was so unprofessional and it affects the whole team."'>
+                        <p class="text-xs text-red-600 mt-3" data-lang-vi="<strong>Phân tích:</strong> Cách nói này mang tính công kích, phán xét, dễ gây ra sự phòng thủ và không giải quyết được gốc rễ vấn đề." data-lang-en="<strong>Analysis:</strong> This approach is accusatory and judgmental, likely causing defensiveness and not addressing the root cause."></p>
+                    </div>
+                    <div class="p-6 bg-teal-50 border-l-4 border-teal-300 rounded-r-lg">
+                        <h4 class="font-bold text-lg mb-2 text-teal-700 flex items-center" data-lang-vi="<span class='text-2xl mr-2'>✔️</span> Cách góp ý HIỆU QUẢ" data-lang-en="<span class='text-2xl mr-2'>✔️</span> Effective Feedback"></h4>
+                        <p class="italic text-gray-700" data-lang-vi='"Chào An, <strong>(S)</strong> trong buổi họp sáng nay, <strong>(B)</strong> chị thấy phần báo cáo của em chưa được cập nhật, dù deadline là chiều qua. <strong>(I)</strong> Việc này khiến cả nhóm chưa có đủ số liệu để lên kế hoạch tiếp theo. Có khó khăn gì không em, mình hỗ trợ được gì không?"' data-lang-en='"Hi An, <strong>(S)</strong> during our meeting this morning, <strong>(B)</strong> I noticed your report had not been updated, though the deadline was yesterday afternoon. <strong>(I)</strong> This means the team does not have the data to plan our next steps. Is there anything I can do to help?"'></p>
+                        <p class="text-xs text-teal-600 mt-3" data-lang-vi="<strong>Phân tích:</strong> Tập trung vào sự việc, nêu rõ tác động và mở ra hướng giải quyết một cách hỗ trợ." data-lang-en="<strong>Analysis:</strong> Focuses on the facts, clarifies the impact, and opens the door for a supportive solution."></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col items-center space-y-4">
+                <div class="w-full max-w-lg p-6 bg-white rounded-lg shadow-md border-l-4 border-[#0A9396]">
+                    <h3 class="text-xl font-bold text-[#005F73] flex items-center" data-lang-vi="<span class='text-3xl mr-3'>🧐</span> 1. Nhận diện & Làm rõ" data-lang-en="<span class='text-3xl mr-3'>🧐</span> 1. Identify & Clarify"></h3>
+                    <p class="text-gray-600 mt-2" data-lang-vi="Cùng nhau xác định rõ thách thức một cách khách quan, sử dụng phương pháp SBI để mô tả vấn đề." data-lang-en="Clearly and objectively define the challenge together, using the SBI method to describe the issue."></p>
+                </div>
+                <div class="text-4xl text-[#94D2BD]">↓</div>
+                <div class="w-full max-w-lg p-6 bg-white rounded-lg shadow-md border-l-4 border-[#0A9396]">
+                    <h3 class="text-xl font-bold text-[#005F73] flex items-center" data-lang-vi="<span class='text-3xl mr-3'>💬</span> 2. Lắng nghe & Thấu hiểu" data-lang-en="<span class='text-3xl mr-3'>💬</span> 2. Listen & Understand"></h3>
+                    <p class="text-gray-600 mt-2" data-lang-vi="Tạo không gian an toàn để mọi thành viên liên quan chia sẻ quan điểm và chủ động lắng nghe để thấu hiểu lẫn nhau." data-lang-en="Create a safe space for all involved members to share their perspectives and actively listen to understand each other."></p>
+                </div>
+                <div class="text-4xl text-[#94D2BD]">↓</div>
+                <div class="w-full max-w-lg p-6 bg-white rounded-lg shadow-md border-l-4 border-[#0A9396]">
+                    <h3 class="text-xl font-bold text-[#005F73] flex items-center" data-lang-vi="<span class='text-3xl mr-3'>💡</span> 3. Cùng tìm giải pháp" data-lang-en="<span class='text-3xl mr-3'>💡</span> 3. Brainstorm Solutions"></h3>
+                    <p class="text-gray-600 mt-2" data-lang-vi="Cùng nhau brainstorm các phương án khả thi, tập trung vào lợi ích chung của dự án và các bên liên quan." data-lang-en="Brainstorm viable solutions together, focusing on the common interest of the project and stakeholders."></p>
+                </div>
+                <div class="text-4xl text-[#94D2BD]">↓</div>
+                <div class="w-full max-w-lg p-6 bg-white rounded-lg shadow-md border-l-4 border-[#0A9396]">
+                    <h3 class="text-xl font-bold text-[#005F73] flex items-center" data-lang-vi="<span class='text-3xl mr-3'>🚀</span> 4. Cam kết hành động" data-lang-en="<span class='text-3xl mr-3'>🚀</span> 4. Commit to Action"></h3>
+                    <p class="text-gray-600 mt-2" data-lang-vi="Thống nhất và triển khai giải pháp đã chọn với sự phân công trách nhiệm rõ ràng và cam kết của cả nhóm." data-lang-en="Agree on and implement the chosen solution with clear responsibilities and a team-wide commitment."></p>
+                </div>
+                <div class="text-4xl text-[#94D2BD]">↓</div>
+                <div class="w-full max-w-lg p-6 bg-white rounded-lg shadow-md border-l-4 border-[#0A9396]">
+                    <h3 class="text-xl font-bold text-[#005F73] flex items-center" data-lang-vi="<span class='text-3xl mr-3'>📝</span> 5. Rút kinh nghiệm & Phát triển" data-lang-en="<span class='text-3xl mr-3'>📝</span> 5. Reflect & Grow"></h3>
+                    <p class="text-gray-600 mt-2" data-lang-vi="Nhìn lại quá trình để rút ra bài học, ghi nhận nỗ lực và cải thiện cho những lần hợp tác sau." data-lang-en="Review the process to draw lessons, acknowledge efforts, and improve for future collaborations."></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+     <footer class="text-center p-8 bg-[#005F73] text-white">
+        <p class="font-bold text-lg mb-4">Mental Health Resource Network</p>
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="https://www.facebook.com/mentalhealthresourcenetwork" target="_blank" class="hover:underline">Facebook</a>
+            <a href="https://www.linkedin.com/company/mental-health-resource-network" target="_blank" class="hover:underline">LinkedIn</a>
+            <a href="https://www.youtube.com/@mentalhealthresourcenetwork" target="_blank" class="hover:underline">YouTube</a>
+            <a href="#" target="_blank" class="hover:underline">Spotify</a>
+        </div>
+        <p class="text-sm">&copy; 2025 | At Peace Teachers - Strong Students</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const langButtons = {
+                vi: document.getElementById('lang-vi'),
+                en: document.getElementById('lang-en')
+            };
+            const translatableElements = document.querySelectorAll('[data-lang-vi]');
+
+            function switchLanguage(lang) {
+                translatableElements.forEach(el => {
+                    el.innerHTML = el.getAttribute(`data-lang-${lang}`);
+                });
+
+                Object.values(langButtons).forEach(btn => btn.classList.remove('active'));
+                langButtons[lang].classList.add('active');
+                document.documentElement.lang = lang;
+            }
+
+            langButtons.vi.addEventListener('click', () => switchLanguage('vi'));
+            langButtons.en.addEventListener('click', () => switchLanguage('en'));
+
+            // Initialize with Vietnamese
+            switchLanguage('vi'); 
+        });
+    </script>
+</body>
+</html>
+
